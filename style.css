@@ -4,29 +4,13 @@ html {
     background-color: rgb(2, 0, 32);
 }
 
+nav {
+    transition: .7s;
+}
+
 main {
     background-color: rgb(2, 0, 32);
     font-family: Poppins, sans-serif;
-}
-
-header {
-    background-image: url(images/videoplayback_Trim.gif);
-    background-size: cover;
-    position: relative;
-    text-align: center;
-    padding-top: 10rem;
-    padding-bottom: 20rem;
-}
-
-header:before {
-    content: "";
-    position: absolute;
-    background-color: black;
-    opacity:.7;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
 }
 
 footer {
@@ -35,9 +19,42 @@ footer {
     padding-top: 2rem;
 }
 
+.iconIzq {
+    color: white;
+    transition: .7s;
+}
+
+.iconIzq:hover {
+    color: aqua;
+    transition: .7s;
+}
+
+.iconIzq:focus{
+    color: aqua;
+}
+
+.Active {
+    color: aqua;
+}
+
 .containerTitle {
-    padding-top: 5rem;
-    padding-bottom: 5rem;
+    background-image: url(images/videoplayback_Trim.gif);
+    background-size: cover;
+    position: relative;
+    text-align: center;
+    padding-top: 15rem;
+    padding-bottom: 30rem;
+}
+
+.containerTitle:before {
+    content: "";
+    position: absolute;
+    background-color: black;
+    opacity:.7;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
 }
 
 .subtitulo, .titulo {
@@ -170,7 +187,15 @@ footer {
     --bs-card-bg: ;
 }
 
+.navbar {
+    --bs-navbar-active-color: aqua;
+}
+
 .footerContainer {
     color: rgb(85, 85, 85);
     text-align: right;
+}
+
+::-webkit-scrollbar {
+    display: none;
 }

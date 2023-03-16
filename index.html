@@ -18,7 +18,31 @@
 <body>
   <header>
     <!-- place navbar here -->
-    <div class="containerTitle container">
+    <nav class="navbar fixed-top navbar-expand-lg bg-body-tertiary" id="navbar">
+      <div class="container-fluid">
+        <a class="iconIzq navbar-brand" href="#">Navbar scroll</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarScroll">
+          <ul class="navbar-nav ms-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+            <li class="nav-item">
+              <a class="iconIzq nav-link" id="home" aria-current="page" href="#" onclick="clickBotonNav(this.id)">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="iconIzq nav-link" id="hola" href="#sobreMi" onclick="clickBotonNav(this.id)">Hola</a>
+            </li>
+            <li class="nav-item">
+              <a class="iconIzq nav-link" id="adios" href="#proyectos" onclick="clickBotonNav(this.id)">Adios</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <div class="containerTitle container-fluid m-0">
       <div class="subtitulo">
         <h5>Soy</h5>
       </div>
@@ -29,10 +53,8 @@
         <h5>Bienvenido a mi portal de proyectos</h5>
       </div>
     </div>
-  </header>
 
-  <main>
-    <div class="containerText container">
+    <div class="containerText container" id="sobreMi">
       <div class="filaSobreMi row">
         <div class="colSobreMi col-lg-8">
           <h4><strong><u>Sobre Mi</u></strong></h4>
@@ -53,7 +75,7 @@
           </div>
         </div>
       </div>
-      <div class="tituloProyectos"><h3><u><strong>Mis Proyectos</strong></u></h3></div>
+      <div class="tituloProyectos" id="proyectos"><h3><u><strong>Mis Proyectos</strong></u></h3></div>
       <div class="filaProyectos row" style="align-items: stretch;">
         <div class="colCardProyecto col-md">
           <div class="cardProyectos card">
@@ -102,6 +124,9 @@
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
     integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
+  </script>
+
+  <script src="script.js">
   </script>
 </body>
 
