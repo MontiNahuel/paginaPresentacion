@@ -1,0 +1,175 @@
+html {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(2, 0, 32);
+}
+
+main {
+    background-color: rgb(2, 0, 32);
+    font-family: Poppins, sans-serif;
+}
+
+header {
+    background-image: url(images/videoplayback_Trim.gif);
+    background-size: cover;
+    position: relative;
+    text-align: center;
+    padding-top: 10rem;
+    padding-bottom: 20rem;
+}
+
+header:before {
+    content: "";
+    position: absolute;
+    background-color: black;
+    opacity:.7;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+footer {
+    background-color: black;
+    padding-bottom: 5rem;
+    padding-top: 2rem;
+}
+
+.containerTitle {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+.subtitulo, .titulo {
+    position: relative;
+    color: aqua;
+    font-family: Poppins, sans-serif;
+    font-weight: 5rem;
+    padding-top: 1.5rem;
+}
+
+.tituloProyectos {
+    color: aqua;
+    text-align: center;
+    padding: 2rem;
+}
+
+.col {
+    /* margin: 2rem; */
+    color: rgb(0, 234, 251);
+}
+
+.containerText {
+    padding-top: 1rem;
+    background-size: cover;
+    padding-bottom: 1rem;
+}
+
+.filaSobreMi {
+    justify-content: center;
+    align-items: center;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    background-color: rgb(4, 0, 47);
+    border-radius: 2rem;
+    margin-bottom: 4rem;
+    margin-top: 4rem;
+}
+
+.colSobreMi {
+    padding-left: 3rem;
+    padding-right: 3rem;
+}
+
+.textoSobreMi {
+    text-align: justify;
+}
+
+.cardPortfolio {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    padding: 15px;
+    background-color: rgb(4, 0, 47);
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    transition: .5s;
+}
+
+.cardPortfolio:hover {
+    background-color: rgb(2, 0, 32);
+    border-color: aqua;
+    transition: .5s;
+}
+
+.textoTarjetaPortfolio {
+    text-align: justify;
+}
+
+.botonPortfolio {
+    border-color: aqua;
+}
+
+.colSobreMi > h4 {
+    text-align: center;
+    padding-bottom: 3rem;
+    color: rgb(0, 211, 211);
+}
+
+.colSobreMi > p {
+    color: rgb(0, 203, 203);
+}
+
+.filaProyectos {
+    justify-content: center;
+    align-items: center;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    border-radius: 2rem;
+    margin-bottom: 4rem;
+    margin-top: 4rem;
+}
+
+.colCardProyecto {
+    background-color: rgb(2, 0, 32);
+    transition: 1s;
+    filter: grayscale(100%);
+    border-radius: 1rem;
+    margin: 1rem;
+    border: 1px solid rgba(128, 128, 128, 0.443);
+}
+
+.cardProyectos {
+    filter: grayscale(100%);
+    color: aqua;
+    transition: 1s;
+}
+
+.colCardProyecto:hover {
+    transition: 1s;
+    background-color: rgb(4, 0, 47);
+    filter: grayscale(0%);
+    border-width: 1px;
+    border-color: rgba(0, 255, 255, 0.552);
+    border-style: solid;
+}
+
+.colCardProyecto:hover > .cardProyectos {
+    transition: 1s;
+    filter: grayscale(0%);
+}
+
+.botonProyecto {
+    transition: .5s;
+    color: aqua;
+    border-color: aqua;
+}
+
+.card {
+    --bs-card-bg: ;
+}
+
+.footerContainer {
+    color: rgb(85, 85, 85);
+    text-align: right;
+}
